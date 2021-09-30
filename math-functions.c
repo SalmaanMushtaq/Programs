@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-float main()
+int main()
 {
   printf("power of 3 and 4 = %f\n", pow(3,4));
   
