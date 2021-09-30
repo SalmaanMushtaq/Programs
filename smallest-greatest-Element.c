@@ -31,7 +31,7 @@ int greatestElement(int *ptr, int size)
 
 int main()
 {
-  int arr[] = {2,3,1,10,5};
+  int arr[] = {2, 3, 1, 10, 5, 15, 16, 0, 35};
   int smallest = 0;
   int greater = 0;
   int size = sizeof arr/ sizeof arr[0];
