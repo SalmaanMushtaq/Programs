@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 int AddElements(int *ptr, int size)
 {
   int total = 0;
@@ -16,4 +16,6 @@ int  main()
   int size = sizeof arr/sizeof arr[0];
  
   printf("Sum of  array is= %d\n", AddElements(arr,size));
- }
+
+  return 0;
+}
