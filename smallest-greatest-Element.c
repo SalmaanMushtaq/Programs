@@ -2,29 +2,29 @@
 
 int smallestElement(int *ptr, int size)
 {
-  int small = ptr[1];
+  int smallest = ptr[1];
   for (int i = 0; i < size; i++)
   {
-    if(small > ptr[i])
+    if(smallest > ptr[i])
     {
-      small = ptr[i];
+      smallest = ptr[i];
     }
   }
-  return small;
+  return smallest;
   
 }
 
 int greatestElement(int *ptr, int size)
 {
-  int greater = ptr[1];
+  int greatest = ptr[1];
   for (int i = 0; i < size; i++)
   {
-    if(greater< ptr[i])
+    if(greatest< ptr[i])
     {
-      greater = ptr[i];
+      greatest = ptr[i];
     }
   }
-  return greater;
+  return greatest;
   
 }
 
@@ -33,16 +33,16 @@ int main()
 {
   int arr[] = {2, 3, 1, 10, 5, 15, 16, 0, 35};
   int smallest = 0;
-  int greater = 0;
+  int greatest = 0;
   int size = sizeof arr/ sizeof arr[0];
   
   smallest = smallestElement(arr, size);
   
-  greater = greatestElement(arr,size);
+  greatest = greatestElement(arr,size);
   
   printf("The smallest number is %d\n", smallest);
 
-printf("The greater number is %d\n", greater);
+  printf("The greatest number is %d\n", greatest);
 
 return 0;
 }
